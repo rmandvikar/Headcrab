@@ -29,6 +29,7 @@
 		});
 	}
 
+	const CommitMessageSubjectLength = 50;
 	var templates =
 	{
 		"Ready for review":
@@ -84,8 +85,9 @@
 			"h3. {color:#357FC7}Workarounds{color}\n" + "- \n\n" +
 			"h3. {color:#357FC7}Suggested Fix{color}\n" + "- \n",
 		"CommitMessage":
-			'{{key}} {{title}} \n\n' +
-			'- \n\n' +
+			'{{subject}}\n' +
+			'#{{title}}\n\n' +
+			' - \n\n' +
 			'----------------------------------------------------------------------\n' +
 			'/ #{{key}}, #{{issueType}}{{labels}}',
 		"CodeReviewRequestSubject":
@@ -190,6 +192,8 @@
 			var info = getPageInfo();
 			var message = templates.CommitMessage;
 			message = message.replace(/\{\{key\}\}/g, info.key);
+			message = message.replace(/\{\{subject\}\}/g, (info.key.trim()
+				+ " " + info.title.trim()).substring(0, CommitMessageSubjectLength));
 			message = message.replace(/\{\{title\}\}/g, info.title);
 			message = message.replace(/\{\{issueType\}\}/g, info.issueType);
 			message = message.replace(/\{\{labels\}\}/g, info.labels);
