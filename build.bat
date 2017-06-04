@@ -1,6 +1,7 @@
 @ECHO -------------------------------------------
-@ECHO                JIRA HEADCRAB
+@ECHO                   eJira
 @ECHO Install Node Packages and build output for
 @ECHO publishing extension.
 @ECHO -------------------------------------------
 (if exist .\publish RD /s /q .\publish) && npm install && npm run grunt
+pause
