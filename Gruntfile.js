@@ -43,12 +43,12 @@ module.exports = function(grunt)
 		{
 			chrome:
 			{
-				options: { mode: 'zip', archive: 'publish/Chrome/Headcrab.zip' },
+				options: { mode: 'zip', archive: 'publish/Chrome/eJira.zip' },
 				files: [{ src: ['publish/Chrome/*', '*.pem'], expand: true, flatten: true }]
 			},
 			firefox:
 			{
-				options: { mode: 'zip', archive: 'publish/Firefox/Headcrab.xpi' },
+				options: { mode: 'zip', archive: 'publish/Firefox/eJira.xpi' },
 				files: [{ src: ['publish/Firefox/*'], expand: true, flatten: true }]
 			}
 		}

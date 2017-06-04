@@ -1,10 +1,10 @@
 {
-	"name": "Headcrab",
+	"name": "eJira",
 	"version": "1.4",
 	"manifest_version": 2,
 	"description": "Various helpers for software devs attached into Jira.",
 
-	"applications": { "gecko": { "id": "headcrab@thorhanks.com" } },
+	"applications": { "gecko": { "id": "ejira@hippy" } },
 
 	"permissions": ["*://*/*", "storage"],
 

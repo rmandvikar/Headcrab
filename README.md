@@ -1,7 +1,9 @@
 ![](http://i.imgur.com/H4M7Oyx.png)
 
-# Headcrab
-Extension that attaches a variety of helpful features to Jira. Headcrab is geared toward making the day-to-day ticket edits faster and easier.
+# eJira
+Extension that attaches a variety of helpful features to Jira. eJira is geared toward making the day-to-day ticket edits faster and easier.
+
+Headcrab (old version) is available here:
 
 [Chrome Download Here](https://chrome.google.com/webstore/detail/headcrab/jnimolcmflanjdofadcbihecegjfljpi)
 
